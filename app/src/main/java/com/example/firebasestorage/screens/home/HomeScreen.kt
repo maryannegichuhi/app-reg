@@ -26,6 +26,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
 import com.example.firebasestorage.LocationActivity
 import com.example.firebasestorage.navigation.ROUT_ABOUT
+import com.example.firebasestorage.navigation.ROUT_CONTACT
 import com.example.firebasestorage.navigation.ROUT_LOGIN
 import com.example.firebasestorage.navigation.ROUT_SIGNUP
 
@@ -63,9 +64,9 @@ fun HomeScreen(navController:NavHostController) {
             backgroundColor = Color.Green)
         Spacer(modifier = Modifier.height(20.dp))
         Button(onClick = {
-            navController.navigate(ROUT_ABOUT)
+            navController.navigate(ROUT_CONTACT)
         }) {
-            Text(text = "About")
+            Text(text = "Contact")
 
         }
 
